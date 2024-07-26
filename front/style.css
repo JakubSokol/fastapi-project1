@@ -1,0 +1,28 @@
+body{
+    background-color: beige;
+}
+.container {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button {
+    border: 2px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.button:hover {
+    background-color: darkslateblue;
+}
+.button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
