@@ -15,9 +15,18 @@
         <button id="button" class="button">PRESS</button>
         <p id="response"></p>
     </div>
+    <div class ="col">
+        <p id="count">Button was pressed: 0 times</p>
+    </div>
     <script>
+        let count=0;
         document.getElementById("button").addEventListener("click",async function() {
-            window.alert("You shouldn't have pressed it");
+            count++;
+            document.getElementById("count").innerText = `Button was pressed: ${count} times`;
+            console.log("You shouldn't have pressed it");
+            if (count%50===0){
+                window.alert("Seriously, stop")
+            }
             
             const response = await fetch("/", 
             {
